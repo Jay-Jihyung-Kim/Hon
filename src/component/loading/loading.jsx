@@ -43,8 +43,8 @@ const Loading = () => {
       padding: 5,
       showOutline: false,
       strokeColor: "#d34",
-      strokeAnimationSpeed: 1,
-      delayBetweenStrokes: 100,
+      strokeAnimationSpeed: 2,
+      delayBetweenStrokes: 80,
     });
     writer.animateCharacter();
 
@@ -53,7 +53,7 @@ const Loading = () => {
       height: 230,
       padding: 5,
       showOutline: false,
-      strokeColor: "#FFF",
+      strokeColor: "#d34",
       strokeAnimationSpeed: 1,
       delayBetweenStrokes: 100,
     });

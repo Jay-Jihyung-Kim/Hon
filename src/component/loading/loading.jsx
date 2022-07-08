@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import styled, { withTheme } from "styled-components";
+import React, { useEffect } from "react";
+import styled from "styled-components";
 import { mobile } from "../../util/responsive";
 import HanziWriter from "hanzi-writer";
 
@@ -18,19 +18,17 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
-  & > svg:first-child {
-    display: none;
-  }
   display: none;
+  background-color: #d34;
+  border-radius: 50%;
   @media screen and (min-width: 481px) {
     display: block;
   }
 `;
 
 const TitleMobile = styled.div`
-  & > svg:first-child {
-    display: none;
-  }
+  background-color: #d34;
+  border-radius: 50%;
   display: none;
   ${mobile({ display: "block" })}
 `;
@@ -42,7 +40,7 @@ const Loading = () => {
       height: 300,
       padding: 5,
       showOutline: false,
-      strokeColor: "#d34",
+      strokeColor: "#FFF",
       strokeAnimationSpeed: 2,
       delayBetweenStrokes: 80,
     });
@@ -53,9 +51,9 @@ const Loading = () => {
       height: 230,
       padding: 5,
       showOutline: false,
-      strokeColor: "#d34",
-      strokeAnimationSpeed: 1,
-      delayBetweenStrokes: 100,
+      strokeColor: "#FFF",
+      strokeAnimationSpeed: 2,
+      delayBetweenStrokes: 80,
     });
     writer.animateCharacter();
   }, []);

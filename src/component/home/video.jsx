@@ -6,6 +6,7 @@ const Background = styled.div`
   background-color: black;
   width: 100%;
   height: 100%;
+  max-height: 100vh;
 `;
 const Container = styled.div`
   margin: 0 auto;
@@ -24,7 +25,7 @@ const Video = () => {
           style={{
             height: "100%",
             width: "100%",
-            objectFit: "contain",
+            objectFit: "cover",
           }}
         ></VideoPlayer>
       </Container>

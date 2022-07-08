@@ -5,7 +5,7 @@ import { mobile, tablet, largeTablet } from "../../util/responsive";
 const Background = styled.div`
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: black;
   padding: 25rem;
   ${largeTablet({ padding: "15rem" })}
   ${tablet({
@@ -17,7 +17,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: row;
   gap: 15rem;
-
+  align-items: center;
   ${largeTablet({
     flexDirection: "column",
     alignItems: "center",
@@ -32,7 +32,7 @@ const Left = styled.div``;
 const Logo = styled.span`
   font-family: "Ma Shan Zheng", cursive;
   font-size: 17rem;
-  color: black;
+  color: white;
   background-color: #d34;
   width: 17rem;
   height: 17rem;
@@ -52,12 +52,14 @@ const Right = styled.div`
 const Title = styled.span`
   font-size: 4rem;
   font-weight: bold;
+  color: white;
   ${mobile({
     fontSize: "2.5rem",
   })}
 `;
 const Text = styled.span`
   font-size: 2.5rem;
+  color: white;
   ${mobile({
     fontSize: "1.5rem",
   })}

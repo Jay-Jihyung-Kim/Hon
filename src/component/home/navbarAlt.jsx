@@ -95,9 +95,6 @@ const HiddenText = styled.span`
   border-top: 1px solid white;
   width: 100%;
   padding: 1rem 1rem;
-  &:last-child {
-    border-bottom: 1px solid white;
-  }
 `;
 
 const NavbarAlt = () => {
@@ -120,10 +117,9 @@ const NavbarAlt = () => {
         <NavBottom>
           <NavText>Home</NavText>
           <NavText>Menu</NavText>
-          <NavText>Order Online</NavText>
           <NavText>Gallery</NavText>
+          <NavText>Order Online</NavText>
           <NavText>Store Info</NavText>
-          <NavText>Contacts</NavText>
           <NavMenu>
             <AiOutlineMenu onClick={handleOpenMenu} />
           </NavMenu>
@@ -132,10 +128,9 @@ const NavbarAlt = () => {
       <HiddenContainer height={menuOpen}>
         <HiddenText>Home</HiddenText>
         <HiddenText>Menu</HiddenText>
-        <HiddenText>Order Online</HiddenText>
         <HiddenText>Gallery</HiddenText>
+        <HiddenText>Order Online</HiddenText>
         <HiddenText>Store Info</HiddenText>
-        <HiddenText>Contacts</HiddenText>
       </HiddenContainer>
     </Background>
   );

@@ -33,7 +33,7 @@ const CategoryList = styled.div`
 const GalleryImage = styled.img`
   width: 400px;
   height: 250px;
-  object-fit: fill;
+  object-fit: cover;
   border: 5px solid #f5f5f5;
   cursor: pointer;
   ${largeTablet({ width: "300px", height: "187.5px" })}

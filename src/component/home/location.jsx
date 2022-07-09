@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import GoogleMapReact from "google-map-react";
 import styled from "styled-components";
 import SimpleMap from "./map.jsx";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { ExternalLink } from "react-external-link";
 import { mobile, tablet, largeTablet } from "../../util/responsive";
 
 const Background = styled.div`
   height: 100%;
   width: 100%;
-  background-color: #3d3d3d;
-  color: rgba(255, 255, 255, 0.8);
+  background-color: #eae4de;
 `;
 const Container = styled.div`
   display: flex;
@@ -85,7 +84,7 @@ const FooterText = styled.span`
 
 const Location = () => {
   return (
-    <Background>
+    <Background id="location">
       <Container>
         <Title>Location</Title>
         <Info>
@@ -96,8 +95,11 @@ const Location = () => {
             <InfoText style={{ fontWeight: "bold", marginBottom: "1rem" }}>
               Address
             </InfoText>
-            <InfoText>5450 Beach Blvd.</InfoText>
+            <InfoText>6940 Beach Blvd.</InfoText>
             <InfoText>Buena Park, CA 90621</InfoText>
+            <a href="https://www.google.com/maps/dir//The+Source+OC,+6940+Beach+Blvd,+Buena+Park,+CA+90621/@33.8596169,-117.9977509,17z/data=!4m6!4m5!1m0!1m2!1m1!1s0x80dd2b93365c7d65:0x434ac94650445f0b!3e0">
+              <InfoText>Get Direction</InfoText>
+            </a>
             <InfoText>(714)-123-1234</InfoText>
             <InfoText style={{ fontWeight: "bold", margin: "3rem 0 1rem" }}>
               Hours

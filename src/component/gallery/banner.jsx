@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import menu_image from "../../image/menu_image.jpg";
+import gallery_image from "../../image/gallery_image.jpg";
 import { mobile, largeTablet } from "../../util/responsive";
 
 const Background = styled.div``;
@@ -34,11 +34,11 @@ const Text = styled.span`
 
 const Banner = () => {
   return (
-    <Background id="menu">
+    <Background id="gallery">
       <Container>
-        <BannerImage src={menu_image} />
+        <BannerImage src={gallery_image} />
         <TextContainer>
-          <Text>MENU</Text>
+          <Text>GALLERY</Text>
         </TextContainer>
       </Container>
     </Background>

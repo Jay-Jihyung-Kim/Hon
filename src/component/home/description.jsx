@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { mobile, tablet, largeTablet } from "../../util/responsive";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Background = styled.div`
   height: 100%;
@@ -38,9 +40,9 @@ const Logo = styled.span`
   height: 17rem;
   border-radius: 50%;
   ${mobile({
-    fontSize: "13rem",
-    width: "13rem",
-    height: "13rem",
+    fontSize: "8rem",
+    width: "8rem",
+    height: "8rem",
   })}
 `;
 const Right = styled.div`
@@ -66,9 +68,12 @@ const Text = styled.span`
 `;
 
 const Description = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <Background>
-      <Container>
+      <Container data-aos="fade-right">
         <Left>
           <Logo>魂</Logo>
         </Left>

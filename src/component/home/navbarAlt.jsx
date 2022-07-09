@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { HashLink } from "react-router-hash-link";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { mobile, tablet, largeTablet } from "../../util/responsive";
 
 const Background = styled.div`
@@ -103,34 +105,94 @@ const NavbarAlt = () => {
   function handleOpenMenu() {
     if (menuOpen === "0") setMenuOpen("100");
     if (menuOpen === "100") setMenuOpen("0");
-    console.log(menuOpen);
+  }
+  function toTop() {
+    window.scrollTo(0, 0);
+    setMenuOpen("0");
   }
   return (
-    <Background>
+    <Background id="home">
       <Container>
         <NavTop>
           <LogoBackgroud>
             <NavLogo>魂</NavLogo>
           </LogoBackgroud>
-          <NavLogoText>Hon</NavLogoText>
+          <HashLink
+            onClick={toTop}
+            style={{ textDecoration: "none" }}
+            to="/home"
+          >
+            <NavLogoText>Hon</NavLogoText>
+          </HashLink>
         </NavTop>
         <NavBottom>
-          <NavText>Home</NavText>
-          <NavText>Menu</NavText>
-          <NavText>Gallery</NavText>
+          <HashLink
+            onClick={toTop}
+            style={{ textDecoration: "none" }}
+            to="/home"
+          >
+            <NavText>Home</NavText>
+          </HashLink>
+          <HashLink
+            onClick={toTop}
+            style={{ textDecoration: "none" }}
+            to="/menu"
+          >
+            <NavText>Menu</NavText>
+          </HashLink>
+          <HashLink
+            onClick={toTop}
+            style={{ textDecoration: "none" }}
+            to="/gallery"
+          >
+            <NavText>Gallery</NavText>
+          </HashLink>
           <NavText>Order Online</NavText>
-          <NavText>Store Info</NavText>
+          <HashLink to="/home/#location" style={{ textDecoration: "none" }}>
+            <NavText>Store Info</NavText>
+          </HashLink>
           <NavMenu>
             <AiOutlineMenu onClick={handleOpenMenu} />
           </NavMenu>
         </NavBottom>
       </Container>
       <HiddenContainer height={menuOpen}>
-        <HiddenText>Home</HiddenText>
-        <HiddenText>Menu</HiddenText>
-        <HiddenText>Gallery</HiddenText>
+        <HiddenText>
+          <HashLink
+            onClick={toTop}
+            to="/home"
+            style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
+          >
+            Home
+          </HashLink>
+        </HiddenText>
+        <HiddenText>
+          <HashLink
+            onClick={toTop}
+            style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
+            to="/menu"
+          >
+            Menu
+          </HashLink>
+        </HiddenText>
+        <HiddenText>
+          <HashLink
+            onClick={toTop}
+            style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
+            to="/gallery"
+          >
+            Gallery
+          </HashLink>
+        </HiddenText>
         <HiddenText>Order Online</HiddenText>
-        <HiddenText>Store Info</HiddenText>
+        <HiddenText>
+          <HashLink
+            to="/home/#location"
+            style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
+          >
+            Store Info
+          </HashLink>
+        </HiddenText>
       </HiddenContainer>
     </Background>
   );

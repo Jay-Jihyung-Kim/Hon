@@ -9,18 +9,29 @@ import Loading from "../loading/loading.jsx";
 
 const Container = styled.div``;
 
-const Home = () => {
+const Initial = () => {
+  const [load, setLoad] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoad(false), 4000);
+    console.log(load);
+  }, []);
+
   return (
     <React.Fragment>
-      <Container>
-        <NavbarAlt />
-        <Video />
-        <Description />
-        <Carousel />
-        <Location />
-      </Container>
+      {load === false ? (
+        <Container>
+          <NavbarAlt />
+          <Video />
+          <Description />
+          <Carousel />
+          <Location />
+        </Container>
+      ) : (
+        <Loading />
+      )}
     </React.Fragment>
   );
 };
 
-export default Home;
+export default Initial;

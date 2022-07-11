@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Loading from "./component/loading/loading.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./component/pages/home.jsx";
 import Initial from "./component/pages/initial.jsx";
 import Menu from "./component/pages/menu.jsx";

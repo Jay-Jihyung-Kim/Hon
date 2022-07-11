@@ -46,7 +46,7 @@ const Loading = () => {
     });
     writer.animateCharacter();
 
-    var writer = HanziWriter.create("mobile", "魂", {
+    var writerMobile = HanziWriter.create("mobile", "魂", {
       width: 230,
       height: 230,
       padding: 5,
@@ -55,7 +55,7 @@ const Loading = () => {
       strokeAnimationSpeed: 2,
       delayBetweenStrokes: 80,
     });
-    writer.animateCharacter();
+    writerMobile.animateCharacter();
   }, []);
 
   return (

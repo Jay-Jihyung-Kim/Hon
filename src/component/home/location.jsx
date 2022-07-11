@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import SimpleMap from "./map.jsx";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { ExternalLink } from "react-external-link";
 import { mobile, tablet, largeTablet } from "../../util/responsive";
 
 const Background = styled.div`

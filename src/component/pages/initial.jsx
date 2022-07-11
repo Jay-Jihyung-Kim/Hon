@@ -14,7 +14,6 @@ const Initial = () => {
 
   useEffect(() => {
     setTimeout(() => setLoad(false), 4000);
-    console.log(load);
   }, []);
 
   return (

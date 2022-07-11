@@ -1,27 +1,16 @@
-import item_1 from "../image/item_1.jpg";
-import item_2 from "../image/item_2.jpg";
-import item_3 from "../image/item_3.jpg";
-import item_4 from "../image/item_4.jpg";
-import item_5 from "../image/item_5.jpg";
-import item_6 from "../image/item_6.jpg";
-import item_7 from "../image/item_7.jpg";
-import item_8 from "../image/item_8.jpg";
-import item_9 from "../image/item_9.jpg";
-import item_10 from "../image/item_10.jpg";
-
 export const sushiCombo = [
   {
     id: 1,
     name: "Sushi Lunch",
     description:
-      "Served with soup and Salad. 8pc Sushi, California Roll, Spicy Tuna Roll",
+      "Served with soup and Salad. 8pc Sushi, California Roll or Spicy Tuna Roll",
     price: "20.95",
   },
   {
     id: 1,
     name: "Sushi Dinner",
     description:
-      "Served with soup and Salad. 12pc Sushi, California Roll, Crunch Roll",
+      "Served with soup and Salad. 12pc Sushi, California Roll or Crunch Roll",
     price: "24.95",
   },
   {
@@ -274,120 +263,140 @@ export const gallery_images = [
   {
     id: 1,
     name: "Tuna Roll",
+    description: "Cut rolls (6pc)",
     type: "roll",
     price: "6.50",
   },
   {
     id: 2,
     name: "Salmon Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.00",
   },
   {
     id: 3,
     name: "Shrmip Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.50",
   },
   {
     id: 4,
     name: "Shrmip Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.50",
   },
   {
     id: 5,
     name: "Salmon Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.00",
   },
   {
     id: 6,
     name: "Surfclam Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.50",
   },
   {
     id: 7,
     name: "Tuna Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.00",
   },
   {
     id: 8,
     name: "Seared Salmon Sushi",
+    description: "2pc",
     type: "sushi",
     price: "8.00",
   },
   {
     id: 9,
     name: "Red Snapper Sushi",
+    description: "2pc",
     type: "sushi",
     price: "8.00",
   },
   {
     id: 10,
     name: "Unagi Sushi",
+    description: "2pc",
     type: "sushi",
     price: "7.50",
   },
   {
     id: 11,
     name: "Blossom Roll",
+    description: "Unagi and Crabmeat wrapped in Salmon(4pc)",
     type: "roll",
     price: "14.50",
   },
   {
     id: 12,
     name: "Dragon Roll",
+    description: "California Roll with Unagi on top(8pc)",
     type: "roll",
     price: "12.00",
   },
   {
     id: 13,
     name: "Shrmip Shumai",
+    description: "Steamed Shumai(6pc)",
     type: "starters",
     price: "8.50",
   },
   {
     id: 14,
     name: "Shrmip Tempura",
+    description: "4pc",
     type: "starters",
     price: "7.50",
   },
   {
     id: 15,
     name: "Gyoza",
+    description: "Deep fried dumplings (5pc)",
     type: "starters",
     price: "7.50",
   },
   {
     id: 16,
     name: "Sushi Lunch Combo",
-    type: "sushi",
+    description: "8pc Sushi, California Roll or Spicy Tuna Roll",
+    type: "sushi combo",
     price: "20.95",
   },
   {
     id: 17,
     name: "Sushi Dinner Combo",
-    type: "sushi",
+    description: "12pc Sushi, California Roll or Crunch Roll",
+    type: "sushi combo",
     price: "24.95",
   },
   {
     id: 18,
     name: "Philadelphia Roll",
+    description: "Roll with Salmon, Cucumber, and Cream Cheese(8pc)",
     type: "roll",
     price: "10.00",
   },
   {
     id: 19,
-    name: "Crunch Roll",
+    name: "Mega Crunch Roll",
+    description: "Shrimp Temprua, Avocado, Salmon(6pc)",
     type: "roll",
     price: "10.00",
   },
   {
     id: 20,
-    name: "Yummy Roll",
+    name: "Crazy Roll",
+    description: "Shrimp Temprua, Avocado, Cream Cheese(6pc)",
     type: "roll",
     price: "15.50",
   },

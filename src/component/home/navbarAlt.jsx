@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { mobile, tablet, largeTablet } from "../../util/responsive";
+import { tablet, largeTablet } from "../../util/responsive";
 
 const Background = styled.div`
   background-color: black;

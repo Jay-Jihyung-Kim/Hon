@@ -5,7 +5,7 @@ import styled from "styled-components";
 import sushi from "../../image/sushi.jpg";
 import sake from "../../image/sake.jpg";
 import ichiban from "../../image/ichiban.jpg";
-import { mobile, largeTablet } from "../../util/responsive";
+import { mobile } from "../../util/responsive";
 
 const GridContainer = styled.div``;
 

@@ -176,6 +176,7 @@ const Items = () => {
           selectedCategory.splice(selectedCategory.indexOf(image), 1);
         setItemsPerPage(selectedCategory.length);
         setSelectedCategory(selectedCategory);
+        setCurrentPage(1);
       });
     }
   };

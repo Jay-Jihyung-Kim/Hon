@@ -146,7 +146,6 @@ const NavbarAlt = () => {
           >
             <NavText>Gallery</NavText>
           </HashLink>
-          <NavText>Order Online</NavText>
           <HashLink to="/home/#location" style={{ textDecoration: "none" }}>
             <NavText>Store Info</NavText>
           </HashLink>
@@ -183,7 +182,6 @@ const NavbarAlt = () => {
             Gallery
           </HashLink>
         </HiddenText>
-        <HiddenText>Order Online</HiddenText>
         <HiddenText>
           <HashLink
             to="/home/#location"

@@ -8,7 +8,7 @@ const containerStyle = {
 
 export default function SimpleMap() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCTCIOvCIhp9mdsnshqsiEAgi6aB2VU08A",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API,
     language: "en",
   });
   if (!isLoaded) return <div>Loading...</div>;
